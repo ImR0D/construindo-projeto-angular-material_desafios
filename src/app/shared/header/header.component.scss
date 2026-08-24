@@ -60,10 +60,14 @@
 
           & .primary-btn,
           & .secondary-btn {
-            padding-left: 0.5em;
-            padding-right: 0.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4em;
+            padding-left: 1em;
+            padding-right: 1em;
             border-radius: 2em;
-            min-width: 106px;
+            min-width: 112px;
             cursor: pointer;
             color: var(--foreground);
             font-size: 1em;

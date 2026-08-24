@@ -24,11 +24,23 @@
             </button>
           }
           @if (!currentUser()) {
-            <button class="secondary-btn" (click)="openLoginDialog()">
+            <button
+              mat-fab
+              extended
+              class="secondary-btn"
+              (click)="openLoginDialog()"
+            >
+              <mat-icon>login</mat-icon>
               Login
             </button>
           } @else {
-            <button class="secondary-btn" (click)="openLogoutDialog()">
+            <button
+              matFab
+              extended
+              class="secondary-btn"
+              (click)="openLogoutDialog()"
+            >
+              <mat-icon>logout</mat-icon>
               Logout
             </button>
           }
