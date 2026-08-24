@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #6750a4;
+  --secondary-color: #625b71;
+
+  --foreground: #ffffff;
+
+  --primary-color-container: #eaddff;
+  --secondary-color-container: #e8def8;
+
+  --primary-color-container-foreground: #21005d;
+  --secondary-color-container-foreground: #1d192b;
+
+  --primary-color-onAction: #d0bcff;
+  --secondary-color-onAction: #ccc2dc;
+
+  --on-error-color: #b3261e;
+  --on-error-container: #f9dedc;
+  --on-error-container-foreground: #410e0b;
+  --on-error-color-onclick: #efb8c8;
+
+  --dark-shade1: #1d1b20;
+  --dark-shade2: #49454f;
+  --dark-shade3: #79747e;
+  --dark-shade4: #cac4d0;
+
+  --light-shade1: #f7f2fa;
+  --light-shade2: #f3edf7;
+  --light-shade3: #ece6f0;
+  --light-shade4: #e6e0e9;
+
+  --orange: #ff9431;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+}
