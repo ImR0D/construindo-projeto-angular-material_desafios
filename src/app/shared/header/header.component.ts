@@ -5,6 +5,7 @@ import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 import { User } from '../../models/user';
 import { AuthenticationService } from '../../services/authentication.service';
 import { LogoutDialogComponent } from './logout-dialog/logout-dialog.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,8 @@ import { LogoutDialogComponent } from './logout-dialog/logout-dialog.component';
 export class HeaderComponent {
   readonly dialog = inject(MatDialog);
   readonly authService = inject(AuthenticationService);
+
+  private router = inject(Router);
 
   readonly currentUser = this.authService.UserAuthenticated;
 
@@ -28,5 +31,9 @@ export class HeaderComponent {
 
   logout() {
     this.authService.logout();
+  }
+
+  toHome() {
+    this.router.navigate(['/']);
   }
 }
