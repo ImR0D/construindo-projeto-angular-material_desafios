@@ -4,6 +4,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 import { User } from '../../models/user';
 import { AuthenticationService } from '../../services/authentication.service';
+import { LogoutDialogComponent } from './logout-dialog/logout-dialog.component';
 
 @Component({
   selector: 'app-header',
@@ -19,6 +20,10 @@ export class HeaderComponent {
 
   openLoginDialog() {
     this.dialog.open(LoginDialogComponent);
+  }
+
+  openLogoutDialog() {
+    this.dialog.open(LogoutDialogComponent);
   }
 
   logout() {
