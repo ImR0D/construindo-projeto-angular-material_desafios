@@ -1,5 +1,13 @@
 <div class="container">
-  <app-header></app-header>
+  <header>
+    <app-header></app-header>
+    <app-banner
+      [backgroundImage]="bg"
+      [bannerImage]="imgBanner"
+      [bannerLabel]="lbBanner"
+      [switchLabelImagePosition]="switchPosition"
+    ></app-banner>
+  </header>
   <ng-container>
     <router-outlet></router-outlet>
   </ng-container>

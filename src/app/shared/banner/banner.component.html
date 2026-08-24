@@ -1,0 +1,15 @@
+<div class="banner">
+  <div class="switchable-container">
+    <div class="container">
+      <div
+        [style.background-image]="
+          backgroundImage() ? 'url(' + backgroundImage() + ')' : 'none'
+        "
+        [class]="switchLabelImagePosition() ? 'content-invert' : 'content'"
+      >
+        <h1>{{ bannerLabel() }}</h1>
+        <img [src]="bannerImage()" />
+      </div>
+    </div>
+  </div>
+</div>
