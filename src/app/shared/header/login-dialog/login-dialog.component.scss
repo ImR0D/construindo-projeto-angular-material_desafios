@@ -1,0 +1,11 @@
+.formLogin {
+  padding: 0.5em;
+  mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    min-width: 400px;
+  }
+}

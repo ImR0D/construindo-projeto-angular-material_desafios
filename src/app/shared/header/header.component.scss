@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 72px;
+  background-color: var(--dark-shade1);
+  color: var(--foreground);
+
+  & .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+    & .logo {
+      padding: 1em;
+      margin-left: 3em;
+      margin-right: 3em;
+      & .jm-logo {
+        width: 162px;
+        height: 40px;
+      }
+    }
+
+    & .menu {
+      display: flex;
+      flex-direction: row;
+      gap: 2.5em;
+      .links {
+        & ul {
+          display: flex;
+          flex-direction: row;
+          gap: 2.5em;
+
+          & li {
+            button {
+              border: none;
+              color: inherit;
+              background: transparent;
+              letter-spacing: 2px;
+              word-spacing: 1px;
+            }
+            button:hover {
+              text-decoration: underline;
+              text-underline-offset: 8px;
+              cursor: pointer;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .user {
+        .register-or-Login {
+          display: flex;
+          gap: 1em;
+          height: 100%;
+          justify-content: space-between;
+          align-items: stretch;
+
+          & .primary-btn,
+          & .secondary-btn {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            border-radius: 2em;
+            min-width: 106px;
+            cursor: pointer;
+            color: var(--foreground);
+            font-size: 1em;
+          }
+          & .primary-btn {
+            background-color: var(--primary-color);
+            border: none;
+            min-width: 135px;
+            &:hover {
+              background-color: var(--primary-color-onAction);
+              color: var(--primary-color);
+              font-weight: 700;
+            }
+          }
+          & .user-circle {
+            border: none;
+            border-radius: 100%;
+            cursor: pointer;
+
+            &:hover {
+              box-shadow: 1px 1px 12px 2px var(--secondary-color-onAction);
+              filter: sepia(200%);
+            }
+          }
+          & .secondary-btn {
+            background-color: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--foreground);
+            &:hover {
+              background-color: var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+li {
+  list-style-type: none;
+}

@@ -1,0 +1,24 @@
+<form class="formLogin" [formGroup]="formLogin" (ngSubmit)="logar()">
+  <mat-dialog-content>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" formControlName="email" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Senha</mat-label>
+      <input matInput type="password" formControlName="password" />
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="center">
+    <button mat-button color="primary" type="submit">Logar</button>
+    <button
+      mat-button
+      color="secondary"
+      [mat-dialog-close]="true"
+      cdkFocusInitial
+    >
+      Cancelar
+    </button>
+  </mat-dialog-actions>
+</form>
