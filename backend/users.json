@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "7b8315a9-37af-46c8-ab9c-17eb56e41b7f",
+      "username": "lucas.silva",
+      "email": "lucas.silva@example.com",
+      "hash": "29e12c9d4b267f13d1c4ba6ede4c62b353318bbbcb2d66dbe7076e36dccd45fc",
+      "salt": "a1b2c3d4e5f60718293a4b5c6d7e8f90",
+      "createdAt": "2026-01-15T08:30:00Z",
+      "lastLogin": "2026-08-19T14:22:10Z",
+      "status": "active"
+    },
+    {
+      "id": "37a5797c-88bd-4c8c-858a-094bcc4914c0",
+      "username": "mariana.costa",
+      "email": "mariana.costa@example.com",
+      "hash": "c005b8a07f07e59bc70b62edefcba03138382c610996dbefbd7aee80c2fdbf08",
+      "salt": "f0e9d8c7b6a55433221100aabbccdde3",
+      "createdAt": "2026-02-01T10:15:30Z",
+      "lastLogin": "2026-08-20T09:05:44Z",
+      "status": "active"
+    },
+    {
+      "id": "22244632-0ad0-45e4-8f73-22ac859237b1",
+      "username": "carlos.eduardo",
+      "email": "carlos.eduardo@example.com",
+      "hash": "3e9bbf9a910ea093cf1a0aa2a34ddae26b89ae3baaa220d9f4859a1e0b5f5431",
+      "salt": "1234567890abcdef1234567890abcdef",
+      "createdAt": "2026-03-10T11:45:12Z",
+      "lastLogin": "2026-07-11T18:30:00Z",
+      "status": "pending"
+    },
+    {
+      "id": "b51a35bb-8525-4512-89e5-f296731c70bc",
+      "username": "beatriz.oliveira",
+      "email": "beatriz.oliveira@example.com",
+      "hash": "a24446c8bc5cbcc69f8c6fb9ecffc186064f78696d04e4e94b2b737bb96f26df",
+      "salt": "fedcba0987654321fedcba0987654321",
+      "createdAt": "2026-05-20T16:20:00Z",
+      "lastLogin": "2026-08-18T22:12:05Z",
+      "status": "active"
+    },
+    {
+      "id": "d9485071-caf1-4ac4-92de-da9badfa0076",
+      "username": "rodrigo.santos",
+      "email": "rodrigo.santos@example.com",
+      "hash": "252efeb6b95b451000b080516541629dd08432bd38c8fbfe1dd43c7b27ff7ef5",
+      "salt": "aabbccddeeff00112233445566778899",
+      "createdAt": "2026-06-05T09:00:00Z",
+      "lastLogin": "2026-06-10T14:00:00Z",
+      "status": "suspended"
+    }
+  ]
+}
