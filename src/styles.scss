@@ -1,4 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+// custom generated with ng g @angular/material:theme-color
+@use "@angular/material" as mat;
+@use "./theme-colors" as theme;
+
+html {
+  @include mat.theme(
+    (
+      color: (
+        theme-type: light,
+        primary: theme.$primary-palette,
+        tertiary: theme.$tertiary-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 :root {
   --primary-color: #6750a4;
@@ -31,18 +56,4 @@
   --light-shade4: #e6e0e9;
 
   --orange: #ff9431;
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  background: var(--mat-sys-surface);
-  color: var(--mat-sys-on-surface);
 }
