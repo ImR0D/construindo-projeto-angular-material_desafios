@@ -1,0 +1,51 @@
+<form [formGroup]="formPassagens" (ngSubmit)="buscar()">
+  <div class="container">
+    <h1>Passagens</h1>
+    <div class="content--tipo">
+      <div>
+        <mat-button-toggle-group
+          name="tipoPassagem"
+          formControlName="tipoPassagem"
+        >
+          @for (tipo of tiposPassagens; track tipo.value) {
+            <mat-button-toggle [value]="tipo.value">{{
+              tipo.label
+            }}</mat-button-toggle>
+          }
+        </mat-button-toggle-group>
+      </div>
+
+      <div class="content--origem-destino">
+        <div class="content--dados">
+          <mat-form-field class="dados-origem" appearance="outline">
+            <mat-icon class="flightoff" matTextPrefix>flight_takeoff</mat-icon>
+            <mat-label>Origem</mat-label>
+            <input
+              type="text"
+              formControlName="origem"
+              matInput
+              placeholder="Origem"
+            />
+            <mat-icon matSuffix>search</mat-icon>
+          </mat-form-field>
+
+          <mat-icon class="switchable">sync_alt</mat-icon>
+
+          <mat-form-field class="dados-destino" appearance="outline">
+            <mat-icon class="land" matTextPrefix>flight_land</mat-icon>
+            <mat-label>Destino</mat-label>
+            <input
+              type="text"
+              formControlName="destino"
+              matInput
+              placeholder="Destino"
+            />
+            <mat-icon matSuffix>search</mat-icon>
+          </mat-form-field>
+
+          <button mat-flat-button type="submit">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

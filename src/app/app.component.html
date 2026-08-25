@@ -1,14 +1,15 @@
 <div class="container">
   <header>
-    <app-header></app-header>
+    <app-header />
     <app-banner
       [backgroundImage]="bg"
       [bannerImage]="imgBanner"
       [bannerLabel]="lbBanner"
       [switchLabelImagePosition]="switchPosition"
-    ></app-banner>
+    />
   </header>
   <ng-container>
+    <app-formulario-passagens />
     <router-outlet></router-outlet>
   </ng-container>
 </div>

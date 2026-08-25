@@ -1,0 +1,46 @@
+form {
+  margin: 40px 196px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+    & .content--tipo {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+    & .content--origem-destino {
+      display: flex;
+
+      & .content--dados {
+        display: flex;
+        gap: 1em;
+
+        .dados-origem {
+          display: flex;
+          align-items: center;
+        }
+        mat-icon[matsuffix] {
+          cursor: help;
+        }
+        .flightoff,
+        .land {
+          transform: translate(-4px, 6px);
+          margin-right: 0.4em;
+        }
+
+        mat-icon.switchable,
+        button {
+          margin-top: 0.6em;
+        }
+
+        mat-icon.switchable {
+          padding: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
