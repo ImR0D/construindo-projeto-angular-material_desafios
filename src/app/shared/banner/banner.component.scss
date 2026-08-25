@@ -45,6 +45,13 @@
       }
       .content-invert {
         flex-direction: row-reverse;
+        & h1 {
+          padding-left: 0;
+        }
+
+        & img {
+          padding-right: 0%;
+        }
       }
     }
   }
